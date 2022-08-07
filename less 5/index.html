@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 100px;
+
+        }
+    </style>
+
+</head>
+<body>
+<script>
+
+
+    // // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
+    //
+    // function calcSQ(a,b){
+    //     return a * b;
+    // }
+    //
+    // console.log(calcSQ(5, 20));
+
+    // // - створити функцію яка обчислює та повертає площу кола з радіусом r
+    //
+    // function calcSQ (pi,r){
+    //     return pi * r * r;
+    // }
+    //
+    // console.log(calcSQ((3.14),5));
+
+
+    // // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+    //
+    // function calcSQ(pi,r, h){
+    //     return 2 * pi * r * h;
+    //
+    // }
+    //
+    // console.log(calcSQ(3.14, 5, 8));
+
+
+    // // - створити функцію яка приймає масив та виводить кожен його елемент
+    //
+    // let array = [2, 3, 4, - 2, 1];
+    // function showArray (array){
+    //     for (let i = 0; i < array.length; i++)
+    //         return array
+    //
+    // }
+    //
+    // console.log(showArray(array));
+
+
+
+    // // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
+    // function showText(text){
+    //     document.write(`<p>${text}</p>`);
+    // }
+    //
+    // showText('');
+
+
+
+    // // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+    //
+    // function showText(text){
+    //     document.write(`<ul>`)
+    //         document.write(`<li>${text}</li>
+    //                        <li>${text}</li>
+    //                        <li>${text}</li>`
+    //                                         );
+    //     document.write(`</ul>`)
+    // }
+    // showText('');
+
+
+
+    // // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+    //
+    // function showText(text){
+    //     document.write(`<ul>`)
+    //     for (let i = 0; i < 3; i++) {
+    //         document.write(`<li>${text}</li>
+    //                        <li>${text}</li>
+    //                        <li>${text}</li>`);
+    //     }
+    //     document.write(`</ul>`)
+    // }
+    // showText('');
+
+
+
+    // // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+    //
+    //
+    // let user = [111,NaN,0,'efef']
+    //
+    // function WriteArray(array){
+    //     document.write(`<div>`)
+    //     for (let i = 0; i < array.length; i++) {
+    //         const arrayElement = array[i];
+    //         document.write(`
+    //             <li>${arrayElement}</li>
+    //                             `);
+    //         }
+    //         document.write(`</div>`)
+    //     }
+    // WriteArray(user)
+
+
+
+    // // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+    //
+    //
+    //     let user = [
+    //             {name: 'vasya', id: 'petrenko', age: 11},
+    //             {name: 'kolya', id: 'terenko', age: 32},
+    //             {name: 'anna', id: 'vitrenko', age: 33},
+    //             {name: 'ivan', id: 'pestenko', age: 44},
+    //             {name: 'tarik', id: 'retrenko', age: 44},
+    //             {name: 'mariya', id: 'didenko', age: 3},
+    //             {name: 'tolya',id: 'pavlyuk', age: 0},
+    //             {name: 'kaka', id: 'petrenko', age: 45},
+    //             {name: 'olya', id: 'vitrenko', age: 56},
+    //             {name: 'svitlana', id: 'retrenko', age: 44}]
+    //
+    //     function WriteArray(array){
+    //         for (const key of array) {
+    //         document.write(`<div>`)
+    //             for (const masivkey in key) {
+    //                 document.write(`
+    //                 <li>${masivkey} -${key[masivkey]}</li>
+    //                                 `);
+    //             }
+    //             document.write(`</div>`)
+    //         }
+    //
+    // }
+    //     WriteArray(user)
+    //
+
+
+    // // - створити функцію яка повертає найменьше число з масиву
+    //
+    // let nums = [3, 3, 45, 50,656, -66, 4545, 0, -112,-686];
+    // function minMums(array){
+    //     let min = array[0];
+    //    for (let key of array){
+    //        if (min>key){
+    //            min=key
+    //        }
+    //     }
+    //     return min
+    // }
+    //
+    //
+    // console.log(minMums(nums));
+
+
+
+    // // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+    //
+    //
+    // let arr= [1,2,3,4,5,6,7,8,9,10]
+    //
+    // function  sumMums(num) {
+    //     let sum = 0;
+    //     for (let i = 0; i < num.length; i++) {
+    //         sum += num[i];
+    //     }
+    //     return sum
+    // }
+    //
+    //
+    // console.log(sumMums(arr));
+
+
+
+</script>
+
+
+
+</body>
+</html>
