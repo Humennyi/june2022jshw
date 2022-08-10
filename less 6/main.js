@@ -172,8 +172,33 @@ cards = [
     {cardSuit: 'spades', value: 'Queen', color: 'black'},
     {cardSuit: 'spades', value: 'King', color: 'black'},
 
+]
+let reduce = cards.reduce(function (accumulator, card) {
+        if (card.value === 'Ace' && card.cardSuit === 'spades') {
+            accumulator.cardAce.push(card);
+        } else if (card.value === 6) {
+            accumulator.cardsix.push(card);
+        } else if (card.color === 'red') {
+            accumulator.colorRed.push(card);
+        } else if (card.cardSuit === 'diamonds') {
+            accumulator.cardSuitdiamonds.push(card);
+        } else if (card.cardSuit === 'clubs' && card.value >= 9) {
 
+            accumulator.cardSuitclubs.push(card);
+        }
 
+        return accumulator;
+    },
+
+    {
+        cardAce: [],
+        cardsix: [],
+        colorRed: [],
+        cardSuitdiamonds: [],
+        cardSuitclubs: []
+    }
+);
+console.log(reduce);
 //
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
@@ -184,29 +209,29 @@ cards = [
 //     clubs:[]
 // }
 
-    reduce = cards.reduce(function (accumulator, card) {
-            if (card.cardSuit === 'clubs') {
-
-                accumulator.cardSuitclubs.push(card);
-            } else if (card.cardSuit === 'diamonds') {
-                accumulator.cardSuitdiamonds.push(card);
-            } else if (card.cardSuit === 'hearts') {
-                accumulator.cardSuithearts.push(card);
-            } else {
-                accumulator.cardSuitspades.push(card);
-            }
-
-            return accumulator;
-        }
-
-        , {
-            cardSuitclubs: [],
-            cardSuitdiamonds: [],
-            cardSuithearts: [],
-            cardSuitspades: []
-        }
-    );
-
-    console.log(reduce);
-
+  // let  reduce = cards.reduce(function (accumulator, card) {
+  //           if (card.cardSuit === 'clubs') {
+  //
+  //               accumulator.cardSuitclubs.push(card);
+  //           } else if (card.cardSuit === 'diamonds') {
+  //               accumulator.cardSuitdiamonds.push(card);
+  //           } else if (card.cardSuit === 'hearts') {
+  //               accumulator.cardSuithearts.push(card);
+  //           } else {
+  //               accumulator.cardSuitspades.push(card);
+  //           }
+  //
+  //           return accumulator;
+  //       }
+  //
+  //       , {
+  //           cardSuitclubs: [],
+  //           cardSuitdiamonds: [],
+  //           cardSuithearts: [],
+  //           cardSuitspades: []
+  //       }
+  //   );
+  //
+  //   console.log(reduce);
+  //
 
