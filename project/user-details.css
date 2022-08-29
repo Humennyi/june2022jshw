@@ -1,0 +1,136 @@
+/*!*Стилизація проєкта -*!*/
+/* index.html - всі блоки з user - по 2 в рядок. кнопки/аосилвння розташувати під інформацією про user.*/
+/*     user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.*/
+/*     блоки з короткою іфною про post - в ряд по 5 .*/
+/*    post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.*/
+/*    Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)*/
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: beige;
+
+
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.position{
+
+    width: 98%;
+    height: 900px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.position>h2{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+    width: 97%;
+    margin: 0;
+    border-radius: 10px;
+    background: aqua;
+
+}
+
+.position>p {
+    font-size: 20px;
+    height: 40px;
+    width: 97%;
+    border: 2px solid green;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: lightblue;
+
+}
+
+.position>ul{
+
+font-size: 20px;
+    height: 230px;
+    width: 97%;
+    border: 2px solid green;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: lightblue;
+
+}
+.position>ul>h3{
+    margin: 0;
+}
+.btn{
+    font-size: 50px;
+    margin: 0;
+    height: 70px;
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.divpost{
+    height: 300px;
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.card{
+
+    padding-left: 10px;
+    height: 130px;
+    width: 18%;
+    background: aqua;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.btn2{
+    height: 30px;
+    width: 95%;
+    background: gold;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+.btn2:hover{
+    background: greenyellow;
+    cursor: pointer;
+    font-weight: bold;
+}

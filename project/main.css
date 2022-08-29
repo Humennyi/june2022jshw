@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: beige;
+
+}
+.main{
+
+    height: 1000px;
+    width: 80%;
+    border: 1px solid black;
+    background: azure;
+     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+
+
+}
+.card{
+    height: 130px;
+    width: 45%;
+    background: aqua;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    font-size: 30px;
+
+
+
+}
+
+.btn{
+    height: 30px;
+    width: 95%;
+    background: gold;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+.btn:hover{
+   background: greenyellow;
+    cursor: pointer;
+    font-weight: bold;
+}
